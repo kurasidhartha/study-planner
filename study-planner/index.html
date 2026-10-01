@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Study Planner</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div>
+    <h1>Study Planner</h1>
+    <p id="summary">Add your first subject to get started.</p>
+  </div>
+  <div class="tools">
+    <button id="theme" class="ghost" aria-label="Toggle dark mode">🌓</button>
+    <button id="export" class="ghost">Export</button>
+    <button id="reset" class="ghost">Reset all</button>
+  </div>
+</header>
+<main>
+  <form id="addSubject">
+    <input id="subName" placeholder="Subject name, e.g. Physics" required maxlength="40" aria-label="Subject name">
+    <input id="subColor" type="color" value="#3d3bf3" aria-label="Subject colour">
+    <button>Add subject</button>
+  </form>
+  <section id="list" aria-live="polite"></section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
